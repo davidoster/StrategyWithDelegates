@@ -13,7 +13,6 @@ namespace ConsoleApp15
             countStrategy1.WordCountOptions = WordCountOptions.ALL;
             Console.WriteLine(countStrategy1.Implement(phrase, word));
 
-            countStrategy1.WordCountOptions = WordCountOptions.CLASSCONDITION;
             Console.WriteLine(countStrategy1.Implement(new WordCountConditions(phrase, word, WordCountOptions.CLASSCONDITION)));
 
             //countStrategy1.SetStrategy(new WordCountAll());
